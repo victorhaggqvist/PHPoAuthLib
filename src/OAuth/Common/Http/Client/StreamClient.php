@@ -73,7 +73,6 @@ class StreamClient extends AbstractClient
   }
 
   private function getContents($url, $body = null, $headers = null, $method = 'GET') {
-    var_dump($url);
     $ch = curl_init();
 
     curl_setopt($ch, CURLOPT_URL, $url);
